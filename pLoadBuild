@@ -1,0 +1,10 @@
+CREATE SCHEMA `pLoad` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+
+
+CREATE TABLE IF NOT EXISTS `pLoad`.`currencyMeta` (
+  `dsCode` INT NOT NULL,
+  `ISOFrom` CHAR(3) NOT NULL,
+  `ISOTo` CHAR(3) NOT NULL,
+  PRIMARY KEY (`dsCode`))
+ENGINE = InnoDB
+COMMENT = 'Currency meta data: map dataset code to ISO'
