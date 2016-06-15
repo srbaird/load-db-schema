@@ -26,3 +26,36 @@ CREATE TABLE IF NOT EXISTS `pLoad`.`ratesLoad` (
   `valueDate` DATETIME NOT NULL,
   `value` DOUBLE NOT NULL)
 ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS `pLoad`.`commodityMeta` (
+  `dsCode` VARCHAR(45) NOT NULL,
+  `dsDescription` VARCHAR(255) NULL,
+  PRIMARY KEY (`dsCode`))
+ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS `pLoad`.`commodityLoadSimple` (
+  `dsCode` VARCHAR(45) NOT NULL,
+  `valueDate` DATETIME NULL,
+  `value` DOUBLE NULL)
+ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS `pLoad`.`equitiesMeta` (
+  `dsCode` VARCHAR(45) NOT NULL,
+  `dsDescription` VARCHAR(45) NULL,
+  PRIMARY KEY (`dsCode`))
+ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS `pLoad`.`equitiesLoad` (
+  `dsCode` VARCHAR(45) NOT NULL,
+  `valueDate` DATETIME NULL,
+  `openPrice` DOUBLE NULL,
+  `highPrice` DOUBLE NULL,
+  `lowPrice` DOUBLE NULL,
+  `closePrice` DOUBLE NULL,
+  `volume` DOUBLE NULL,
+  PRIMARY KEY (`dsCode`))
+ENGINE = InnoDB;
+
+
+
+
