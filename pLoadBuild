@@ -52,10 +52,8 @@ CREATE TABLE IF NOT EXISTS `pLoad`.`equitiesLoad` (
   `highPrice` DOUBLE NULL,
   `lowPrice` DOUBLE NULL,
   `closePrice` DOUBLE NULL,
-  `volume` DOUBLE NULL,
-  PRIMARY KEY (`dsCode`))
+  `volume` DOUBLE NULL)
 ENGINE = InnoDB;
-
 
 
 
